@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300&family=Josefin+Sans&family=Krona+One&family=Montserrat&family=Rubik&display=swap');
+:root {
+    --cor-primaria: #141211;
+    --cor-secundaria: #F6F6F6;
+    --cor-terciaria: #3B3432;
+    --cor-quarta: #4F4557;
+    --fonte-primaria: 'Rubik', sans-serif;
+    --fonte-secundaria: 'Hind Madurai', sans-serif; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: linear-gradient(var(--cor-primaria), var(--cor-quarta));
+    color: var(--cor-secundaria);
+    box-sizing: border-box;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.links {
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+.img  {
+    width: 96px;
+    padding: 0 2%;
+}
+
+.login {
+    text-decoration: none;
+    color: #F6F6F6;
+    font-family: var(--fonte-secundaria);
+}
+.login:hover {
+    transform: scale(1.05);
+    transition: 0.5s;
+}
+
+.container {
+    box-sizing: border-box;
+    padding: 10% 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 5%;
+}
+
+.title {
+    font-family: var(--fonte-primaria);
+    font-size: 50px;
+    text-align: center;
+}
+
+.perfis {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    transition: 0.5s;
+}
+
+.perfis:hover .perfis_acess {
+    filter: blur(5px);
+    transition: 0.3s;
+}
+
+.perfis_img {
+    border-radius: 8px; 
+
+}
+
+
+.perfis_acess {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+    padding: 0 16px;
+}
+.perfis_acess:hover {
+    transform: scale(1.05);
+    filter: blur(0px) !important;
+    transition: 0.5s;
+}
+.gerenciar {
+    margin-top: 30px;
+}
+.gerenciar_a {
+    color: var(--cor-quarta);
+    font-weight: 800;
+    text-decoration: none;
+    font-family: var(--fonte-secundaria);
+    border: 2px solid var(--cor-quarta);
+    padding: 10px 20px;
+    width: 200px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.gerenciar_a:hover {
+    border: 2px solid var(--cor-secundaria);
+    color: var(--cor-secundaria);
+}
+
+.rodape {
+    font-family: var(--fonte-secundaria);
+    background-color: var(--cor-terciaria);
+    padding: 2%;
+    text-align: center;
+}
